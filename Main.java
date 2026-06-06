@@ -49,11 +49,25 @@ system.out.println("location introuvable!");
                     break;
 
                 case 3:
-                    System.out.println("Fonction Supprimer");
+                    
+System.out.println("Fonction supprimer");
+
                     break;
 
                 case 4:
-                    System.out.println("Fonction Afficher");
+                    public void afficher() {
+
+    if (locations.isEmpty()) {
+        System.out.println("⚠ Aucune location enregistrée.");
+        return;
+    }
+
+    System.out.println("\n===== LISTE DES LOCATIONS =====");
+
+    for (Location l : locations) {
+        System.out.println(l);
+    }
+}
                     break;
 		case 5:
 		    System.out.println("Fonction Rechercher");
