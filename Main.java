@@ -25,7 +25,27 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("Fonction Modifier");
+                    public void modifier(int id,string client,string materiel,int duree)
+{
+
+       for (Location l:locations) {
+
+     if (l.getId() ==id) {
+
+    l.setClient(client);
+    l.setMateriel(materiel);
+    l.setDuree(duree);
+
+    System.out.println("Location modifiée!");
+  return;
+
+  } 
+ }
+
+system.out.println("location introuvable!");
+
+}
+
                     break;
 
                 case 3:
